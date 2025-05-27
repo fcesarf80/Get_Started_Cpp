@@ -1,13 +1,22 @@
 #include <iostream>
-using namespace std;
-int main(){
 
-    int idade;
+int main(int arg, char** argv) {
 
-    cout<<"Sua idade: ";
-    cin>>idade;
+	int myInt = 0;
 
-    cout<<"Parabens pelos seus "<<idade<<anos de vida!;
+	myInt = 10;
+	myInt = 20;
+	myInt = 10 + 20;
 
-    return 0;
+	myInt += 10;
+	myInt -= 5 + myInt;
+	myInt *= 10;
+	myInt /= 10;
+
+	std::cout << myInt << "\n";
+
+	system("pause");
+
+	return 0;
+
 }
